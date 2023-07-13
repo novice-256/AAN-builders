@@ -1,0 +1,379 @@
+/* navbar */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Franklin Gothic', Arial, sans-serif;
+    /* font-family: "Montserrat" , sans-serif;  */
+}
+.nav-item{
+    padding: 8px;
+}
+.btn-danger:hover{
+    background-color: transparent;
+    color: rgb(244, 9, 9);
+}
+/* navbar */
+
+
+/* index-body */
+.col-md-3 i{
+    width: 1em;
+    height: 1em;
+    position: relative;
+}
+.obj-class{
+    padding-top: 8px;
+    border: 1px 2px solid;
+}
+.obj-class:hover{
+    box-shadow:1px 0px 5px 0px rgb(94, 92, 92);;
+}
+
+
+/* Featured-Projects */ 
+.grid-work{
+    height: fit-content;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3,1fr);
+    row-gap: 5px;
+    column-gap: 5px;
+}
+
+.img-class img{
+    height: 100%;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px){
+    .grid-work{
+        height: fit-content;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: repeat(6, 1fr);
+        row-gap: 5px;
+        column-gap: 5px;
+        }  
+}
+@media screen and (min-width: 768px){
+    .child-x{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1; 
+        grid-row-end: 3;
+    }
+    .child{
+    }
+}
+    
+/* Featured-Projects */
+
+
+/* services-page */
+.services-title{
+    max-width: 700px;
+    background-color: rgba(0,0,0,0.5);
+    border-left: 5px solid red;
+    color: white;
+    z-index: 1;
+    position: absolute;
+    left: 12px;
+    right: 2px;
+    top: 555px;
+    bottom: 0p;
+    padding: 15px;
+}
+.service-wrapper{
+    padding: 15px;
+}
+
+.service-wrapper:hover{
+    background-color: #dc3545;
+    color: white;
+    border-radius: 8px;
+}
+.service-wrapper:hover button{
+    background-color: white;
+    color: rgb(17, 16, 16);
+}
+
+
+/* Project_page */ 
+
+.projects-title{
+    max-width: 700px;
+    background-color: rgba(0,0,0,0.5);
+    border-left: 5px solid red;
+    color: white;
+    padding: 15px;
+    z-index: 1;
+    position: absolute;
+    top: 69%;
+    left: 12px;
+}
+
+.project-box{
+    min-height: 530px;
+    width: 365px;
+    padding: 15px;
+}
+
+.image-area img{
+    border-radius: 10px;
+    border: 3px solid white;
+    height: 205px;
+}
+.project-box:hover .image-area{
+    border-radius: 10px;
+    transition: .5s;
+    transform: scale(1);
+    border: 3px solid white;
+    box-shadow: 0px 5px 10px black;
+}
+.project-box:hover{
+    background-color: #dc3545;
+    color: white;
+    border-radius: 8px;
+}
+.project-box:hover i{
+    background-color: #dc3545;
+    color: white;
+}
+
+.project-box:hover button{
+    background-color: white;
+    color: rgb(17, 16, 16);
+}
+.counter-icon{
+    margin-right: 5px;
+    
+}
+.counter-element img{
+    float: right;
+    margin-left: 25px;
+}
+.project-box .title{
+    text-transform: uppercase;
+}
+
+/* Detail Page */
+.amenities-section:hover img{
+    border-radius: 10px;
+    transition: .5s;
+    transform: rotate(5deg);
+    border: 3px solid white;
+    box-shadow: 0px 5px 10px black;
+}
+.project-detail-wrapper{
+    border-radius: 10px;
+    box-shadow: #f2f2f2;
+}
+.project-detail-wrapper:hover img{
+    border-radius: 10px;
+    transition: .5s;
+    transform: rotate(5deg);
+    border: 3px solid white;
+    box-shadow: 0px 5px 10px black;
+}
+/* Project_page */  
+
+
+/* Booking Form */
+.booking-area{
+    padding-top: 50px;
+}
+.booking-image{
+    margin-left: 200px;
+}
+
+
+/* contact page */
+
+.contact-banner-title{
+    max-width: 700px;
+    background-color: rgba(0,0,0,0.5);
+    padding: 20px;
+    margin-top: 18%;
+    border-left:5px solid red;
+    color:white;
+    position: absolute;
+    top: 8%;
+    left: 11px;
+}
+h1{
+    font-size: 30px;
+}
+.contact-main-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 50px;
+}
+input{
+    border-color: black;
+    width: 680px;
+    margin-top: 20px;
+    padding: 10px;
+    height: 50px;
+}
+.comment-box{
+    height: 100px;
+}
+table button{
+    color: white;
+    background-color: red;
+    border-color: red;
+    padding: 10px 25px 10px 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.contact-form{
+    background-color: #f2f2f2;
+    width: 500px;
+}
+table{
+    margin-top: 20px;
+}
+
+/* contact page */
+
+
+
+/* footer */
+.mid-footer{
+    background-color:#F2F2F2;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    gap:5px;
+}
+.footer-image{
+    background: no-repeat center url(Assets/Images/footer-image.SVG);
+    height: 120px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.main-footer{
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    font-weight: 500;
+    font-size: 19px;
+}
+.footer-nav{
+    text-align: left;
+}
+/* footer */
+/* about our company page */
+.about-banner-title{
+    max-width: 700px;
+    background-color: rgba(0,0,0,0.5);
+    padding: 20px 0 21px 542px;
+    border-right: 5px solid red;
+    color: white;
+    position: absolute;
+    top: 68%;
+    left: 551px;
+    right: 0px;
+}
+.highlight{
+    color: red;
+}
+/* .title{
+    font-family: 'DM Serif Display',serif;
+} */
+.about-main-container{
+    background-color:#f2f2f2;
+    height: 850px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+}
+.about-container-image{
+    background-image: url(assets/images/about-image.png);
+    height: 550px;
+    width: 545px;
+    margin-top: 100px;
+    margin-left: 40px;
+    background-repeat: no-repeat;
+}
+.about-image-2{
+    background-image: url("assets/Images/about-image-2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 50px;
+    height: 400px;
+    margin-bottom: 50px;
+}
+.container-3{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+.container-4{
+    display: flex;
+    justify-content: space-around;
+    background-color:#F2F2F2;
+    height: 300px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+/* about our company page */
+/* blog page */
+
+.blog-banner-title{
+    max-width: 700px;
+    background-color: rgba(0,0,0,0.5);
+    padding: 20px 0 21px 542px;
+    border-right: 5px solid red;
+    color: white;
+    position: absolute;
+    top: 68%;
+    left: 550px;
+   
+}
+.article-box{
+    min-height: 530px;
+    width: 365px;
+    padding: 15px;
+}
+
+.article-box img{
+    border-radius: 10px;
+    border: 3px solid transparent;
+}
+.article-box:hover img{
+    border-radius: 10px;
+    transition: .5s;
+    transform: rotate(5deg);
+    border: 3px solid white;
+    box-shadow: 0px 5px 10px black;
+}
+.article-box:hover{
+    background-color: #dc3545;
+    color: white;
+    border-radius: 8px;
+}
+.article-box:hover i{
+    background-color: white;
+}
+
+.article-box:hover button{
+    background-color: white;
+    color:rgb(17, 16, 16);
+}
+.counter-element{
+    padding: 5px 0px 5px 8px;
+}
+.counter-element img{
+    float: right;
+    margin-left: 125px;
+}
+/* blog page */
