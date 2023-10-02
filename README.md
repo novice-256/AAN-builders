@@ -3,8 +3,8 @@ AAN Construction site
 ## Credits
 
 ### Development Team
-- Naida (Lead Developer)
-- ahsan 
+- Nadia (Lead Developer)
+- Ahsan 
 
 ### Team Lead
 - Jahangir shah (Project Supervisor)
